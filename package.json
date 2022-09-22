@@ -1,0 +1,14 @@
+{
+    "name": "Project Reaper",
+    "version": "1.0.0",
+    "description": "Check-in, pull.",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "expres": "^0.0.5",
+        "express": "^4.17.1",
+        "mongodb": "^4.10.0",
+        "mongoose": "^6.6.1"
+    }
+}
