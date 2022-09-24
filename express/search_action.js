@@ -14,8 +14,6 @@ function querytest() {
     }))
 }
 
-
-
 function testing() {
     console.log("this does nothing")
 }
