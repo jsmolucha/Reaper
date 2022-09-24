@@ -14,12 +14,13 @@ app.use('/', function(req, res) {
     res.sendFile(path.join(__dirname+'/express/index.html'));
 
 });
-
+/*
 mongoose.connect('mongodb://localhost:27017/userdb'), {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology:true
 }
+*/
 
 const server = http.createServer(app);
 const port = 3000;
