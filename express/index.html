@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <title>Hello, world!</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <script src="scripts\search_action.js"></script>
+  <script src="search_action.js"> </script>
+
 </head>
+
 <body>
   <h1>Auto Tracker</h1>
+
+  <div class="db_conn_status">
+    <button id=""></button>
+    <h3 id="db_status" style="color: red;"> DB Disconnected </h3>
+  </div>
+
+  
   <div class="dropdowns"> 
     <label for="dealer_dd" id="dealer_dd_label">Dealership: </label>
-    <select name="dealer_dd" class="dealer_list">
+    <select name="dealer_dd" id="dealer_list">
       <option value="arlingtoncdjr">AH CDJR</option>
-      <option value="elmkia">Elmhurst KIA</option>
+      <option value="Napleton Hyundai">Napleton Hyundai</option>
       <option value="elmacura">Elmhurst Acura</option>
     </select>
 
     <label for="make_dd" id="make_dd_label"> Make: </label>
-    <select name="make_dd" class="make_list">
+    <select name="make_dd" id="make_list">
       <option value="toyota">Toyota</option>
       <option value="acura">Acura</option>
       <option value="hyundai">Hyundai</option>
     </select>
 
     <label for="model_dd" id="model_dd_label"> Model: </label>
-    <select name="model_dd" class="model_list">
-      <option value="toyota">Camry</option>
-      <option value="acura">Sonata</option>
-      <option value="hyundai">ILX</option>
+    <select name="model_dd" id="model_list">
+      <option value="camry">Camry</option>
+      <option value="sonata">Sonata</option>
+      <option value="ilx">ILX</option>
     </select>
 
 
   </div>
   <div class="search_button">
     <button class="init_search" onclick="getSearchValue()"> Search </button>
-
+    <button class="db_query" onclick="querytest()"> Search DB</button>
   </div>
+
 </body>
+
 </html>
